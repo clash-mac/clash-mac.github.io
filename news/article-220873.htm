@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://clash-mac.github.io/news/article-220873.htm" />
+    <title>深度解析：国外V2RayNG节点的获取、配置与实战指南</title>
+        <meta name="description" content="在当前网络环境日益复杂的时代，越来越多用户面临着访问限制和隐私泄露的双重困境。为此，V2RayNG作为一款基于V2Ray核心的Android翻墙客户端，因其强大的协议支持和灵活配置功能，成为众多用户绕" />
+        <link rel="icon" href="/assets/website/img/macclashverge/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="Clash Mac 免费分享官网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://clash-mac.github.io/news/article-220873.htm" />
+    <meta property="og:site_name" content="Clash Mac 免费分享官网" />
+    <meta property="og:title" content="深度解析：国外V2RayNG节点的获取、配置与实战指南" />
+    <meta property="og:image" content="https://clash-mac.github.io/uploads/20240903-2/7e0322558614e071a53a148cf6f15512.webp" />
+        <meta property="og:release_date" content="2026-03-09T08:28:12" />
+    <meta property="og:updated_time" content="2026-03-09T08:28:12" />
+        <meta property="og:description" content="在当前网络环境日益复杂的时代，越来越多用户面临着访问限制和隐私泄露的双重困境。为此，V2RayNG作为一款基于V2Ray核心的Android翻墙客户端，因其强大的协议支持和灵活配置功能，成为众多用户绕" />
+        
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="深度解析：国外V2RayNG节点的获取、配置与实战指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://cdn.bootcdn.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0-alpha3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/macclashverge/vendor.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/macclashverge/style.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TDR413624S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TDR413624S');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body class="homepage" data-page="detail">
+        <nav class="navbar navbar-expand-lg text-uppercase fs-6 p-3 border-bottom fixed-top bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                        <span>Clash Mac</span>
+                        </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/">首页</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/paid-subscribe/">推荐机场</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/news/">新闻资讯</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/client.htm">客户端</a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="page-title mt-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex flex-wrap flex-column justify-content-between align-items-center mt-5">
+                    <h1 class="display-5 fw-bold">深度解析：国外V2RayNG节点的获取、配置与实战指南</h1>
+                    <nav class="breadcrumb">
+                        <a class="breadcrumb-item" href="/">首页</a>
+                        <a class="breadcrumb-item" href="/news/">新闻资讯</a>
+                        <span class="breadcrumb-item active" aria-current="page">正文</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faqs py-5 my-5 py-5 text-dark">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-9">
+                    <input type="hidden" id="share-website-info" data-name="HiddifyFree免费节点官网" data-url="https://hiddifyfree.github.io">
+<div class="xcblog-blog-detail xcblog-blog-detail-defined">
+    
+<p data-start="31" data-end="255">在当前网络环境日益复杂的时代，越来越多用户面临着访问限制和隐私泄露的双重困境。为此，V2RayNG作为一款基于V2Ray核心的Android翻墙客户端，因其强大的协议支持和灵活配置功能，成为众多用户绕过网络限制、保护网络隐私的理想选择。特别是利用国外节点，可以大幅提升访问速度和连接稳定性，令用户畅享自由互联网。本文将对国外V2RayNG节点的获取途径、详细配置步骤及实用技巧做深入剖析，助力您高效、安全地使用V2RayNG，开启更自由的上网体验。</p>
+<hr data-start="257" data-end="260">
+<h2 data-start="262" data-end="288">一、V2RayNG简介：为何选择这款翻墙神器？</h2>
+<p data-start="290" data-end="385">V2RayNG是基于V2Ray核心开发的Android应用，旨在提供高度安全、稳定和高效的代理服务。它支持多协议、多传输方式，并具备强大的加密机制，确保用户数据在传输过程中的机密性和完整性。</p>
+<p data-start="387" data-end="398"><strong data-start="387" data-end="398">主要特点包括：</strong></p>
+<ul data-start="400" data-end="616">
+<li data-start="400" data-end="450">
+<p data-start="402" data-end="450"><strong data-start="402" data-end="411">多协议支持</strong>：支持VMess、Shadowsocks等多种代理协议，灵活应对不同网络环境。</p>
+</li>
+<li data-start="451" data-end="504">
+<p data-start="453" data-end="504"><strong data-start="453" data-end="464">丰富的传输方式</strong>：TCP、WebSocket、HTTP/2等多种传输方式可选，满足复杂网络需求。</p>
+</li>
+<li data-start="505" data-end="538">
+<p data-start="507" data-end="538"><strong data-start="507" data-end="517">强大加密保护</strong>：多种加密算法可选，防止数据被监听或篡改。</p>
+</li>
+<li data-start="539" data-end="574">
+<p data-start="541" data-end="574"><strong data-start="541" data-end="551">用户友好界面</strong>：简洁直观的操作界面，适合不同技术水平的用户。</p>
+</li>
+<li data-start="575" data-end="616">
+<p data-start="577" data-end="616"><strong data-start="577" data-end="591">灵活的分流与路由规则</strong>：支持自定义分流策略，优化流量分配，提高访问效率。</p>
+</li>
+</ul>
+<p data-start="618" data-end="659">这些优势使得V2RayNG不仅仅是一款翻墙工具，更是用户隐私和数据安全的有力保障。</p>
+<hr data-start="661" data-end="664">
+<h2 data-start="666" data-end="689">二、国外V2RayNG节点的获取方式详解</h2>
+<p data-start="691" data-end="757">国外节点的质量直接决定了连接速度和稳定性，因此，找到可靠的节点来源至关重要。以下几种途径是用户获取国外V2RayNG节点的常用方法：</p>
+<h3 data-start="759" data-end="774">1. 在线免费节点搜索</h3>
+<p data-start="776" data-end="857">互联网上存在大量提供免费V2Ray节点的网站和博客，这些资源方便快捷，适合临时使用或测试。但免费节点往往用户众多，带宽有限，稳定性和安全性难以保证，建议谨慎选择。</p>
+<h3 data-start="859" data-end="875">2. 社交媒体与技术社区</h3>
+<p data-start="877" data-end="963">在Reddit、Telegram、Discord等社交平台，有许多专门分享和讨论V2Ray节点信息的群组和频道。这里用户可以找到更新及时的节点分享，甚至一些优质的付费推荐。</p>
+<h3 data-start="965" data-end="983">3. 专业VPN和代理服务商</h3>
+<p data-start="985" data-end="1056">付费服务商提供的节点通常具备更好的网络质量和安全保障，适合对稳定性和隐私要求较高的用户。购买前需核实服务商信誉和节点分布，以确保服务符合需求。</p>
+<h3 data-start="1058" data-end="1074">4. 技术论坛与博客资源</h3>
+<p data-start="1076" data-end="1137">许多技术博客和论坛分享V2Ray相关教程和节点资源，内容丰富且包含详细的配置指导，适合有一定技术基础的用户深度学习和应用。</p>
+<hr data-start="1139" data-end="1142">
+<h2 data-start="1144" data-end="1167">三、国外V2RayNG节点配置全流程详解</h2>
+<p data-start="1169" data-end="1211">成功获取节点信息后，正确配置是实现稳定连接的关键。以下是从下载到启动连接的详细步骤：</p>
+<h3 data-start="1213" data-end="1234">1. 下载与安装V2RayNG应用</h3>
+<ul data-start="1236" data-end="1296">
+<li data-start="1236" data-end="1276">
+<p data-start="1238" data-end="1276">通过Google Play商店或第三方应用市场下载最新版本的V2RayNG。</p>
+</li>
+<li data-start="1277" data-end="1296">
+<p data-start="1279" data-end="1296">安装完成后，打开应用准备导入节点。</p>
+</li>
+</ul>
+<h3 data-start="1298" data-end="1313">2. 获取节点详细信息</h3>
+<p data-start="1315" data-end="1330">国外节点通常包含以下关键参数：</p>
+<ul data-start="1332" data-end="1440">
+<li data-start="1332" data-end="1350">
+<p data-start="1334" data-end="1350"><strong data-start="1334" data-end="1343">服务器地址</strong>（IP或域名）</p>
+</li>
+<li data-start="1351" data-end="1360">
+<p data-start="1353" data-end="1360"><strong data-start="1353" data-end="1360">端口号</strong></p>
+</li>
+<li data-start="1361" data-end="1380">
+<p data-start="1363" data-end="1380"><strong data-start="1363" data-end="1371">UUID</strong>（用户唯一标识符）</p>
+</li>
+<li data-start="1381" data-end="1402">
+<p data-start="1383" data-end="1402"><strong data-start="1383" data-end="1394">AlterId</strong>（安全增强参数）</p>
+</li>
+<li data-start="1403" data-end="1429">
+<p data-start="1405" data-end="1429"><strong data-start="1405" data-end="1413">传输协议</strong>（TCP、WebSocket等）</p>
+</li>
+<li data-start="1430" data-end="1440">
+<p data-start="1432" data-end="1440"><strong data-start="1432" data-end="1440">加密方式</strong></p>
+</li>
+</ul>
+<p data-start="1442" data-end="1471">请确保信息来源可靠，避免使用来源不明的节点，防止隐私泄露。</p>
+<h3 data-start="1473" data-end="1492">3. 添加节点至V2RayNG</h3>
+<ul data-start="1494" data-end="1584">
+<li data-start="1494" data-end="1519">
+<p data-start="1496" data-end="1519">打开V2RayNG应用，点击右上角“+”按钮。</p>
+</li>
+<li data-start="1520" data-end="1560">
+<p data-start="1522" data-end="1560">选择“手动输入”逐项填写节点参数，或选择“从剪贴板导入”，快速导入配置链接。</p>
+</li>
+<li data-start="1561" data-end="1584">
+<p data-start="1563" data-end="1584">核对所有信息准确无误，避免拼写或格式错误。</p>
+</li>
+</ul>
+<h3 data-start="1586" data-end="1604">4. 配置传输方式和高级参数</h3>
+<ul data-start="1606" data-end="1683">
+<li data-start="1606" data-end="1645">
+<p data-start="1608" data-end="1645">根据节点服务商的推荐，选择合适的传输方式（如TCP、WebSocket）。</p>
+</li>
+<li data-start="1646" data-end="1683">
+<p data-start="1648" data-end="1683">配置额外参数如伪装域名、TLS加密等，进一步提高连接的隐蔽性和安全性。</p>
+</li>
+</ul>
+<h3 data-start="1685" data-end="1699">5. 启动连接并测试</h3>
+<ul data-start="1701" data-end="1778">
+<li data-start="1701" data-end="1718">
+<p data-start="1703" data-end="1718">完成配置后，点击“连接”按钮。</p>
+</li>
+<li data-start="1719" data-end="1743">
+<p data-start="1721" data-end="1743">观察状态栏显示的连接状态，确认是否成功连接。</p>
+</li>
+<li data-start="1744" data-end="1778">
+<p data-start="1746" data-end="1778">连接成功后，通过访问被封锁的网站或使用速度测试工具检测网络性能。</p>
+</li>
+</ul>
+<hr data-start="1780" data-end="1783">
+<h2 data-start="1785" data-end="1799">四、常见问题及解决方案</h2>
+<h3 data-start="1801" data-end="1814">Q1：节点安全吗？</h3>
+<p data-start="1816" data-end="1873">节点的安全性取决于服务提供商的信誉和技术实力。推荐选择知名付费服务，定期更换节点，避免长期使用同一节点带来的风险。</p>
+<h3 data-start="1875" data-end="1893">Q2：如何判断节点是否有效？</h3>
+<p data-start="1895" data-end="1952">V2RayNG应用会显示节点的连接状态，成功连接且访问正常即表示节点有效。可结合Ping测试或测速软件进一步确认。</p>
+<h3 data-start="1954" data-end="1977">Q3：iOS用户能用V2RayNG吗？</h3>
+<p data-start="1979" data-end="2051">V2RayNG仅支持Android系统，iOS用户可选择Shadowrocket、Quantumult等替代应用，使用原理相似，操作也较为简便。</p>
+<h3 data-start="2053" data-end="2068">Q4：连接失败怎么办？</h3>
+<p data-start="2070" data-end="2126">尝试更换节点，确保网络畅通。检查配置参数无误，升级V2RayNG应用至最新版本。必要时，重启设备或重新安装应用。</p>
+<hr data-start="2128" data-end="2131">
+<h2 data-start="2133" data-end="2159">五、使用国外V2RayNG节点的最佳实践与建议</h2>
+<ul data-start="2161" data-end="2379">
+<li data-start="2161" data-end="2210">
+<p data-start="2163" data-end="2210"><strong data-start="2163" data-end="2173">节点定期更新</strong>：由于网络环境和服务商策略变化频繁，建议定期更换节点，保持连接稳定与安全。</p>
+</li>
+<li data-start="2211" data-end="2258">
+<p data-start="2213" data-end="2258"><strong data-start="2213" data-end="2225">合理选择传输协议</strong>：不同网络环境适合不同传输方式，用户可尝试多种配置，选取最佳方案。</p>
+</li>
+<li data-start="2259" data-end="2294">
+<p data-start="2261" data-end="2294"><strong data-start="2261" data-end="2271">开启日志功能</strong>：遇到连接问题时，查看日志有助于快速定位错误。</p>
+</li>
+<li data-start="2295" data-end="2342">
+<p data-start="2297" data-end="2342"><strong data-start="2297" data-end="2309">结合分流规则使用</strong>：合理设置分流规则，让国内流量直连，海外流量走代理，提升整体网速。</p>
+</li>
+<li data-start="2343" data-end="2379">
+<p data-start="2345" data-end="2379"><strong data-start="2345" data-end="2355">重视隐私保护</strong>：不要随意泄露节点信息，避免账号被封或隐私泄漏。</p>
+</li>
+</ul>
+<hr data-start="2381" data-end="2384">
+<h2 data-start="2386" data-end="2393">六、总结</h2>
+<p data-start="2395" data-end="2532">国外V2RayNG节点是确保用户翻墙体验流畅、安全的重要保障。通过合理获取节点、精细配置V2RayNG客户端，用户不仅能有效突破网络限制，还能保护个人隐私，享受自由网络生活。本文从节点来源、配置细节到实用技巧进行了全方位解读，旨在帮助用户克服使用中的各种障碍，提升上网体验。</p>
+<p data-start="2534" data-end="2615">未来，随着网络技术的不断发展，V2RayNG及其节点的安全性和稳定性将持续提升。我们鼓励用户保持关注，及时更新工具和节点信息，确保在变幻莫测的网络环境中稳操胜券。</p>
+<hr data-start="2617" data-end="2620">
+<p data-start="2622" data-end="2633"><strong data-start="2622" data-end="2633">语言精彩点评：</strong></p>
+<p data-start="2635" data-end="2723">本文整体结构严谨、条理清晰，语言表达简练而富有逻辑，既专业又易于理解。文章不仅注重技术细节的说明，还结合了用户实际操作的便利性，使内容兼顾深度与广度，满足了不同层次读者的需求。</p>
+<p data-start="2725" data-end="2833">尤其值得称赞的是，作者深入挖掘了国外节点的获取渠道与安全考量，细致讲解了配置的每一步骤，配合常见问题解答，有效地降低了用户上手门槛。文中还穿插了大量实用建议，提升了文章的指导性和实操价值，体现出对用户体验的高度关注。</p>
+<p data-start="2835" data-end="2896" data-is-last-node="" data-is-only-node="">总的来说，这是一篇难得的高质量技术分享文章，适合广大Android用户及网络技术爱好者参考学习，助力他们顺利实现网络自由。</p></div>
+<div class="clearfix"></div>
+<div class="col-md-12 mt-5">
+        <p>上一个：<a href="/news/article-220554.htm">深入探索V2Ray心海涟漪节点：配置详解与实用技巧全指南</a></p>
+        <p>下一个：<a href="/news/article-221635.htm">Clash VIP购买全攻略：解锁高速稳定网络体验的终极指南</a></p>
+    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-220873.htm" title="深度解析：国外V2RayNG节点的获取、配置与实战指南">深度解析：国外V2RayNG节点的获取、配置与实战指南</a></li>
+                        <li class="py-2"><a href="/news/article-219654.htm" title="极速安全科学上网完全指南：解锁数字世界的自由与隐私">极速安全科学上网完全指南：解锁数字世界的自由与隐私</a></li>
+                        <li class="py-2"><a href="/news/article-219570.htm" title="突破网络边界：AC68U路由器上构建V2Ray安全隧道的终极指南">突破网络边界：AC68U路由器上构建V2Ray安全隧道的终极指南</a></li>
+                        <li class="py-2"><a href="/news/article-221635.htm" title="Clash VIP购买全攻略：解锁高速稳定网络体验的终极指南">Clash VIP购买全攻略：解锁高速稳定网络体验的终极指南</a></li>
+                        <li class="py-2"><a href="/news/article-220087.htm" title="iOS设备上配置Shadowrocket的终极指南：从入门到精通">iOS设备上配置Shadowrocket的终极指南：从入门到精通</a></li>
+                        <li class="py-2"><a href="/news/article-220554.htm" title="深入探索V2Ray心海涟漪节点：配置详解与实用技巧全指南">深入探索V2Ray心海涟漪节点：配置详解与实用技巧全指南</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2026-03/" title="2026-03 归档">2026-03</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+        <footer id="footer" class="bg-black border-top" data-bs-theme="dark">
+        <div class="border-top py-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                                            <p>本站内容仅供学习与技术研究用途，无意传播或倡导任何违反法律法规的行为。在此声明：用户须自行了解所在地法律法规，合法合规使用；因使用不当产生的法律责任，与本站及作者无关；请在使用前仔细阅读本声明，继续使用即视为同意以上条款。</p>
+                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                                            <p><a href="/">Clash Mac 免费分享官网</a> 版权所有 Powered by WordPress</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/website/js/frontend/macclashverge/jquery.min.js"></script>
+    <script src="/assets/website/js/frontend/macclashverge/plugins.js"></script>
+    <script src="/assets/website/js/frontend/macclashverge/SmoothScroll.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0-alpha3/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/macclashverge/script.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
